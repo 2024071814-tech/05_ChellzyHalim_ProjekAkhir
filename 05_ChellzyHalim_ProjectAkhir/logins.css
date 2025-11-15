@@ -1,0 +1,251 @@
+body{
+            margin:0;
+            background-color: rgb(255, 252, 247);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #nav{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            height:80px;
+            background-color: rgb(248,241,231);
+            box-shadow: 0px 0px 3px black;
+            z-index: 100;
+        }
+        .linknav{
+            color: #502314;
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            
+            margin-right: 8%;
+        }
+        .linknav:hover{
+            background-color: rgb(255, 210, 29);
+        }
+        #links{
+            font-size: 1rem;
+            width: 15em;
+            position: absolute;
+            left: 1.5%;
+            top:38%;
+        }
+        .cart{
+            filter: invert(1);
+            position: relative;
+            width: 20%;
+            margin-right: 10px;
+        }
+        .cartparent{
+            color: white;
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 14px;
+
+            width: 140px;
+            height: 40px;
+            position: absolute;
+            right: 5%;
+            top: 25%;
+
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: rgb(216,48,44);
+            
+        }
+        .cartparent:hover{
+            background-color: rgb(134, 23, 21);
+        }
+        #logo{
+            position: relative;
+            display: table;
+            margin: auto;
+            width: 80px;
+            height: 80px;
+        }
+
+        #form{
+            display: inline-block;
+            width: 30rem;
+            background-color: white;
+            box-shadow: 0px 0px 0.2rem black;
+            border-radius:0.6rem;
+            margin: 120px auto 5rem auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        #title{
+            color: #8b542f;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 2rem;
+            margin-bottom:1rem;
+        }
+        #little{
+            color: #5f5f5f;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        #form form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        #form form input{
+            width:20rem;
+            font-family: Helvetica, sans-serif;
+            font-size: 1rem;
+            padding:0.3rem;
+            outline: none;
+            border: 1px solid lightgray;
+            border-radius: 0.2rem;
+            margin: 0.3rem;
+            height: 2rem;
+        }
+        #form #telp{
+            width:20rem;
+            font-family: Helvetica, sans-serif;
+            font-size: 1rem;
+            outline: none;
+            border: 1px solid lightgray;
+            border-radius: 0.2rem;
+            margin: 0.3rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0.25rem 0 0.25rem;
+        }
+        #form #telp input{
+            border: none;
+            height: 1.25rem;
+        }
+        #form #telp input::-webkit-outer-spin-button,
+        #form #telp input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        #form #food input {
+            width: 3rem;
+            float: left;
+        }
+        #food{
+            width: 21.5rem;
+        }
+        #food select{
+            width:16.2rem;
+            font-family: Helvetica, sans-serif;
+            font-size: 1rem;
+            padding:0.3rem;
+            outline: none;
+            border: 1px solid lightgray;
+            border-radius: 0.2rem;
+            margin: 0.3rem;
+            height: 3rem;
+            float: left;
+        }
+        #form form #title{
+            margin-top: 2rem;
+        }
+        #form #submit{
+            height: 3rem;
+            background-color: rgb(255, 136, 0);
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            margin-top:2rem;
+            border: 0px;
+            outline: none;
+        }
+        #form #submit:hover{
+            cursor: pointer;
+            background-color: rgb(225, 105, 0);
+        }
+
+        #footer{
+            color: white;
+            background-color: #2d2d2d;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            padding: 0.9rem 1rem 1rem 20rem;
+            position: relative;
+            margin-top: auto;
+        }
+        #footer img{
+            width: 3rem;
+            float: left;
+            margin-right: 1rem;
+        }
+        #contact{
+            display: flex;
+            flex-direction: row;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        #contact div{
+            margin-right: 2rem;
+        }
+        #contact svg{
+            width: 1rem;
+            fill: white;
+        }
+        .tm{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 0.7rem;
+            color: rgb(162, 162, 162);
+            margin-bottom: 1rem;
+        }
+        .tm a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 0.7rem;
+            color: rgb(162, 162, 162);
+        }
+        .art{
+            width: 50%;
+            margin: 2rem auto 0 auto;
+            text-align: left;
+            font-size: 1rem;
+            color: #502314;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+        .order {
+            background: linear-gradient(135deg, #ff914d, #ff5e00);
+            color: white;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0px 5px 15px rgba(255, 94, 0, 0.4);
+            letter-spacing: 1px;
+        }
+
+        /* efek hover */
+        .order:hover {
+            background: linear-gradient(135deg, #ff5e00, #ff914d);
+            transform: scale(1.05);
+            box-shadow: 0px 8px 18px rgba(255, 94, 0, 0.6);
+        }
+
+        /* efek saat tombol ditekan */
+        .order:active {
+            transform: scale(0.97);
+            box-shadow: 0px 3px 10px rgba(255, 94, 0, 0.3);
+        }

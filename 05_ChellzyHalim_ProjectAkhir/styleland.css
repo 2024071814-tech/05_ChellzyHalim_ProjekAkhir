@@ -1,0 +1,426 @@
+/*buat kayak yg disuruh
+     
+    pertama landing page
+    bs ke login sm about us
+    about us gpp kalo pake html
+    setelah login ke data
+*/
+        body{
+            margin:0;
+            background-color: rgb(245, 245, 245);
+            overflow-x: hidden;
+            font-family: 'League Spartan', sans-serif;
+        }
+        #nav{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            height:80px;
+            background-color: rgb(245, 245, 245);
+            box-shadow: 0px 0px 3px black;
+            z-index: 100;
+        }
+        .linknav{
+            color: #33574f;
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            margin-right: 8%;
+        }
+        .linknav:hover{
+            background-color: rgb(101, 217, 221);
+        }
+        #links{
+            font-size: 1rem;
+            width: 30em;
+            position: absolute;
+            left: 1.5%;
+            top:38%;
+        }
+        .prof{
+            filter: invert(1);
+            position: relative;
+            width: 24%;
+            margin-right: 1px;
+        }
+        .profparent{
+            color: rgb(220, 228, 238);
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 14px;
+            width: 120px;
+            height: 40px;
+            position: absolute;
+            right: 5%;
+            top: 25%;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #33574f;
+            
+        }
+        .profparent:hover{
+            background-color: rgb(101, 217, 221);
+        }
+        #logo{
+            position: relative;
+            display: table;
+            margin: auto;
+            width: 70px;
+            top:5px;
+            height: 70px;
+        }
+
+        #footer{
+            color: white;
+            background-color: #004b4b;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            padding: 0.9rem 1rem 1rem 20rem;
+            position: relative;
+        }
+        #footer img{
+            width: 3rem;
+            float: left;
+            margin-right: 1rem;
+        }
+        #contact{
+            display: flex;
+            flex-direction: row;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        #contact div{
+            margin-right: 2rem;
+        }
+        #contact svg{
+            width: 1rem;
+            fill: white;
+        }
+        .tm{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 0.7rem;
+            color: rgb(162, 162, 162);
+            margin-bottom: 1rem;
+        }
+        .tm a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 0.7rem;
+            color: rgb(162, 162, 162);
+        }
+
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+            box-sizing: border-box;
+            color: white;
+            z-index: 1;
+        }
+
+        .hero-content {
+            flex: 1;
+            padding-right: 20px;
+            max-width: 50%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero-content p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+        }
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .hero-image img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-background video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        .carousel-section {
+            background-color: #33574f;
+            padding: 80px 0;
+            text-align: center;
+            color: white;
+            font-family: 'League Spartan', sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 300%;
+        }
+
+        .carousel-item {
+            min-width: 33.33%;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            margin: 0 1%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .carousel-item-1 { background-image: url('bali1.jpg'); }
+        .carousel-item-2 { background-image: url('sul1.jpg'); }
+        .carousel-item-3 { background-image: url('flores1.jpg'); }
+
+        .carousel-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .carousel-item h2 {
+            position: relative;
+            z-index: 2;
+            font-size: 2.2rem;
+            font-weight: 700;
+            padding: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            max-width: 80%;
+        }
+
+        .carousel-navigation {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            z-index: 10;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .nav-button {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .carousel-dots {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: white;
+        }
+
+        .card-content-section {
+            background-color: #E8F5E9;
+            padding: 80px 0;
+            text-align: center;
+            font-family: 'League Spartan', sans-serif;
+            color: black;
+        }
+
+        .card-content-section h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            color: #33574f;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 0 5%;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 30%;
+            max-width: 350px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+            color: black;
+        }
+
+        .card-body h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #33574f;
+        }
+
+        .card-body p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .hero-content {
+                max-width: 100%;
+                padding-right: 0;
+                margin-bottom: 30px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .hero-image img {
+                max-width: 100%;
+            }
+
+            .carousel-title {
+                font-size: 2rem;
+            }
+
+            .carousel-item {
+                height: 350px;
+            }
+
+            .carousel-item h2 {
+                font-size: 1.5rem;
+            }
+
+            .nav-button {
+                padding: 10px 15px;
+                font-size: 1.2rem;
+            }
+
+            .card-content-section h2 {
+                font-size: 2rem;
+            }
+
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+                margin-bottom: 30px;
+            }
+        }

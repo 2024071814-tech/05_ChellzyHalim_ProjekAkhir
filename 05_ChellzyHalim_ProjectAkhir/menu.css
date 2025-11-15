@@ -1,0 +1,184 @@
+body{
+            margin:0;
+            background: url("https://bkdelivery.co.id/static/website/img/BK_bg.jpg?5218847fa211") no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #nav{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            height:80px;
+            background-color: rgb(248,241,231);
+            box-shadow: 0px 0px 3px black;
+            z-index: 100;
+        }
+        .linknav{
+            color: #502314;
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            
+            margin-right: 8%;
+        }
+        .linknav:hover{
+            background-color: rgb(255, 210, 29);
+        }
+        #links{
+            font-size: 1rem;
+            width: 15em;
+            position: absolute;
+            left: 1.5%;
+            top:38%;
+        }
+        .cart{
+            filter: invert(1);
+            position: relative;
+            width: 20%;
+            margin-right: 10px;
+        }
+        .cartparent{
+            color: white;
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 14px;
+
+            width: 140px;
+            height: 40px;
+            position: absolute;
+            right: 5%;
+            top: 25%;
+
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: rgb(216,48,44);
+            
+        }
+        .cartparent:hover{
+            background-color: rgb(134, 23, 21);
+        } 
+        #logo{
+            position: relative;
+            display: table;
+            margin: auto;
+            width: 80px;
+            height: 80px;
+        }
+
+        #title{
+            position: relative;
+            display: inline-block;
+            margin-top: 80px;
+            width: 100%;
+            color: #502314;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            text-align: center;
+            font-size:2rem;
+        }
+        #main{
+            width: 63rem;
+            padding:1rem;          
+            margin: auto;
+            display: table;
+        }
+        .menu{
+            width: 17rem;
+            height: 19rem;
+            background-color: white;
+            box-shadow: 0px 0px 0.35rem black;
+            border-radius: 0.7rem;
+            position: relative;
+            float: left;
+            padding: 1.4rem 1rem 1rem 1rem;
+            color: #502314;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            margin: 1rem;
+        }
+        .menu:hover{
+            box-shadow: 0px 0px 0.2rem black;
+        }
+        .menu img{
+            opacity: 0.9;
+            width: 16rem;
+            margin-bottom: 0.5rem;
+            box-shadow: 0px 1px 2px black;
+        }
+        .menu img:hover{
+            opacity: 1;
+        }
+        .order{
+            text-decoration: none;
+            color: white;
+            font-size:1.5rem;
+            margin: auto;
+            display: table;
+            margin-top: 1rem;
+        }
+        .order div{
+            width: 12rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+        .order div:hover{
+            background-color: rgb(206, 106, 25);
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        #footer{
+            color: white;
+            background-color: #2d2d2d;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            padding: 0.9rem 1rem 1rem 20rem;
+            position: relative;
+            margin-top: auto;
+        }
+        #footer img{
+            width: 3rem;
+            float: left;
+            margin-right: 1rem;
+        }
+        #contact{
+            display: flex;
+            flex-direction: row;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        #contact div{
+            margin-right: 2rem;
+        }
+        #contact svg{
+            width: 1rem;
+            fill: white;
+        }
+        .tm{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 0.7rem;
+            color: rgb(162, 162, 162);
+            margin-bottom: 1rem;
+        }
+        .tm a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 0.7rem;
+            color: rgb(162, 162, 162);
+        }
